@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+
+</style>
+
+<script>
+   var imgs = new Array();
+   var index = 0;
+   imgs.push("./images/img1.jpg");
+   imgs.push("./images/img2.jpg");
+   imgs.push("./images/img3.jpg");
+   imgs.push("./images/img4.jpg");
+   
+   var imageText = new Array();
+   imageText.push("이미지 텍스트1");
+   imageText.push("이미지 텍스트2");
+   imageText.push("이미지 텍스트3");
+   imageText.push("이미지 텍스트4");
+   
+   
+   // 사용자 요구 사항이 있다고 가정하면 => 2초 마다 이미지를 교체해달라
+   
+   
+   window.onload = function(){ //콜백 함수
+      setInterval("imageChange()", 2000); //1초 마다 imageChange() 함수 호출
+   }
+
+  
+   function imageChange(){
+      var currentDate = new Date();
+      var img = document.getElementById("img");
+      var text = document.getElementById("text");
+      
+      img.src = imgs[index];
+      /* text.innerHTML = imageText[index]; */
+      text.textContent = imageText[index];
+      
+      index ++;
+      if (index == imgs.length) index = 0;
+      
+      //img.src = imgs[parseInt((currentDate.getSeconds()%8)/2)]; //8로 나눈 "나머지"를 2로 나누기
+   }
+   /*
+      1초 % 4 = 1
+      2초 % 4 = 2
+      3초 % 4 = 3
+      4초 % 4 = 0
+      5초 % 4 = 1
+   */
+</script>
+
+</head>
+
+
+<body>
+   <center>
+      <h1>(주)휴먼 소프트웨어 이미지 동적 교체</h1>
+      <img id="img"/>
+      <h2 id = "text"></h2>
+   </center>
+</body>
+</html>

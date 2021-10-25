@@ -1,0 +1,19 @@
+package mybatis.service;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+
+public class FactoryService {
+	private static SqlSessionFactory factory;
+	
+	static {
+		try {
+			//먼저 Mybatis 설정 파일인 config.xml 파일로부터 설정 정보를 읽어들이기
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+}

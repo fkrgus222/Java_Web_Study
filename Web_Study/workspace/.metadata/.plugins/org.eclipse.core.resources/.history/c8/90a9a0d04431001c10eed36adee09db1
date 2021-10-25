@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>requestForm 페이지</title>
+</head>
+<body>
+	<center>
+		<h2>request 테스트 폼</h2>
+		<hr>
+		<form name = "myForm" method = "POST" action = "request_result.jsp">
+			<table border = "1" cellspacing = "1" cellpadding = "5">
+				<tr>
+				
+				</tr>
+			</table>
+		
+		
+		</form>
+	
+	</center>
+</body>
+</html>

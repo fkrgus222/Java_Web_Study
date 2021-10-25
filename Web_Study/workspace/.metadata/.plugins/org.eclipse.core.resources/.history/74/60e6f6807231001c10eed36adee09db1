@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fileSelect 페이지</title>
+</head>
+<body>
+<!--  file upload 할땐 form 태그에 enctype이 추가되어야한다. -->
+	<form name = "fileUpload" enctype = "multipart/form-data"
+		  method = "POST" action = "viewPage.jsp">
+		
+		작성자<br>
+		<input type = "text" name = "name"/><br>		
+	
+		제목<br>
+		<input type = "text" name = "subject"/><br>
+		
+		
+	</form>
+
+
+</body>
+</html>

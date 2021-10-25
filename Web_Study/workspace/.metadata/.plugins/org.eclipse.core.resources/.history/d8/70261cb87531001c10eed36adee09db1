@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+<!--  추가  -->
+<%@ page import = "com.oreilly.servlet.MultipartRequest,
+					com.oreilly.servlet.multipart.DefaultFileRenamePolicy,
+					java.util.*,
+					java.io.*" 
+%>
+
+<%
+	String savePath = "C:/FileUpload/filestorage";
+	String encType = "UTF-8";		
+	int maxSize = 20*1024*1024;   //파일의 사이즈를 최대 20MB 까지 제한 
+	
+	//반드시 예외처리 해야함!!
+	try{
+		//MultipartRequest 클래스는 파일 업로드를 직접적으로 담당하는 클래스이다.
+		MultipartRequest multi = null;
+		
+		multi = new MultipartRequest( request, 
+									  savePath, 
+									  maxSize, 
+									  encType, 
+									  new DefaultFileRenamePolicy() );
+		//DefaultFileRenamePolicy --> 덮어쓰기 방지하기용
+		String name = multi.getParameter("name"); //원래는 request.getParameter였지만, Multi가 담당한다.
+		String subject = multi.getParameter("subject");
+		
+		out.println("작성자: " + name + "<br>");
+		out.println("제목  : " + subject + "<br>");
+		
+	}catch(Exception e){
+		System.out.println(e);
+	}
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>viewPage 페이지</title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트와 경고창을 나타내는 open 플러그인 제작하여 버튼 태그에 적용하기</title>
+<!-- 추가 -->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery3.2.0/jquery.min.js"></script>
+
+<script>
+	$(function(){
+		//플러그인 정의 => 개발자가 직접 제작하겠다.
+		$.fn.open = function(eventType, message){
+			
+					
+			
+		}
+	});
+	
+	
+
+</script>
+
+
+
+</head>
+<body>
+	<p><button class = "btn1">버튼1</button></p>
+	<p><button class = "btn2">버튼2</button></p>
+	<p><button class = "btn3">버튼3</button></p>
+
+
+
+</body>
+</html>
