@@ -72,7 +72,7 @@ public class DispatcherServlet extends HttpServlet {
     	  String searchField = "";
     	  String searchText = "";
     	  
-    	  if(request.getParamete("searchCondition") != "" && request.getParameter("searchKeyword") != "") {
+    	  if(request.getParameter("searchCondition") != "" && request.getParameter("searchKeyword") != "") {
     		  searchField = request.getParameter("searchCondition");
     		  searchText = request.getParameter("");
     		  
@@ -83,7 +83,7 @@ public class DispatcherServlet extends HttpServlet {
     	  
     	  //검색 결과를 세션에 저장
     	  HttpSession session = request.getSession();
-    	  session.setAttrivute("boardList", boardList);
+    	  session.setAttribute("boardList", boardList);
     	  
     	  //포워딩(응답)
     	  response.sendRedirect("getBoardList.jsp");
@@ -93,7 +93,7 @@ public class DispatcherServlet extends HttpServlet {
    else if (filePath.equals("/getBoard.do")) {
     	 System.out.println("게시글 상세 보기 처리");
 	   
-	     String seq = request.getparameter("seq");
+	     String seq = request.getParameter("seq");
 	     
 	     BoardDO boardDO = new BoardDO();
 	     boardDO.setSeq(Integer.parseInt(seq));
