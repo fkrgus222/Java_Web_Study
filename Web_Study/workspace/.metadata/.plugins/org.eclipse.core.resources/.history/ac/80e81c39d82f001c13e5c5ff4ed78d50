@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>(주)휴먼소프트 홈 페이지 만들기</title>
+
+<!--  부트스트랩 기본 태그  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- nav태그는 html5에 새로 추가된 시멘틱 태그 -->
+	<nav class = "navbar navbar-default">
+		<div class = "container-fluid">
+			<a class = "navbar-brand" href = "#">(주)휴먼소프트</a>
+			<button type = "button" class = "navbar-toggle" 
+					data-toggle = "collapse" data-target = "#myNavbar">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					</button>
+		</div>
+		
+		<!-- this is data target -->
+		<div class = "coppalse navbar-collapse" id = "#myNavbar">
+			<ul class = "nav navbar-nav">
+			
+				<li class = "active"><a href = "#">Home</a></li>
+				
+				<li class = "dropdown">
+					<a class = "dropdown-toggle" data-toggle = "dropdown"
+						href = "#">회사 소개<span class = "caret"></span></a>
+					<ul class = "dropdown-menu">
+						<li><a href = "#"> CEO 인사말 </a></li>
+						<li><a href = "#"> 설립 목적 </a></li>
+						<li><a href = "#"> 경영 이념 </a></li>
+						<li><a href = "#"> 회사 연혁 </a></li>
+						<li class = "divider"></li>
+						<li><a href = "#"> 찾아오는길 </a></li>
+					</ul>
+				</li>	
+				
+				<li class = "dropdown">
+					<a class = "dropdown-toggle" data-toggle = "dropdown"
+						href = "#">연구 개발<span class = "caret"></span></a>
+					<ul class = "dropdown-menu">
+						<li><a href = "#"> 자연어 처리 시스템 </a></li>
+						<li><a href = "#"> RPA(로봇프로세스) </a></li>
+						<li><a href = "#"> 경영 이념 </a></li>
+						<li><a href = "#"> 회사 연혁 </a></li>
+						<li class = "divider"></li>
+						<li><a href = "#"> 찾아오는길 </a></li>
+					</ul>
+				</li>
+							
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+</body>
+</html>

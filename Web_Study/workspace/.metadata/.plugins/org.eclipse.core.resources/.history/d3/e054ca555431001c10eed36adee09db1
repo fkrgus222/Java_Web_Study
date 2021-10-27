@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product List 페이지</title>
+</head>
+<body>
+	<h2>제품 목록 보기</h2>
+	<hr>
+	<form name = "myForm" method = "POST" action = "ProductSelect.jsp">
+		<jsp:useBean id = "pro" scope = "page" class = "Product.Product" />
+	</form>
+
+
+
+</body>
+</html>

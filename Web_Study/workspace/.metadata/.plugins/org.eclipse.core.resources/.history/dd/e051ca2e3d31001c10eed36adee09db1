@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!--  추가   -->
+
+<%	//자바 코드 기술
+	//인증 가능 사용자 및 패스워드 목록 생성
+	String[] users = {"park1234","kim1677","hong777"};
+	String[] passwords = {"p456","k7788","h1234"};
+	
+	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
+	
+%>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인폼 페이지</title>
+</head>
+<body>
+
+	<form name = "LoginForm" method = "POST" action = "authentication.jsp">
+		<label for = "id">아이디</label>
+		<input type = "text" name = "id"/>
+		<br>
+		<label for = "pw">패스웓</label>
+		<input type = "pasword" name = "pw"/>
+		<br><br>
+		<input type = "submit" value = "로그인"/>
+	
+	</form>
+
+
+</body>
+</html>

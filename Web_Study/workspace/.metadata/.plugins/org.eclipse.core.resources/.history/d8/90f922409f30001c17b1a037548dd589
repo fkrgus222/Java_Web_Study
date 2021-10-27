@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body onload = "fade_in()">
+	<h1 align = "center">우리은행</h1>
+	<div class = "modal">
+		<p class = "modal_content">
+		 	공모주 청약 준비<br>
+		 	<b>증권거래 가능 통장으로</b><br><br>
+		 	업그레이드하면,<br>
+		 	주식 1주만큼의 축하금 행운이!<br><br><br>
+		 	<span><b>오늘하루 보지 않기</b>&nbsp;&nbsp;&nbsp;&nbsp;<a href = "#" class = "btn_close" onClick = "fade_out()"></a></span>
+		</p>
+	</div>
+
+</body>
+</html>

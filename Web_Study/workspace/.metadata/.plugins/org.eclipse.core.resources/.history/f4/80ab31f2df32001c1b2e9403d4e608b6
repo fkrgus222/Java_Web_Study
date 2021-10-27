@@ -1,0 +1,21 @@
+package common;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JDBCUtil {
+	//H2 DB 연동에 관한 소스
+	static final String driver = "org.h2.Driver";
+	static final String url = "jdgc:h2:tcp://localhost/~/test";
+	
+	public static Connection getConnection() throws Exception{
+		try {
+			Class.forName(driver);
+			Connection con = DriverManager.getConnection(url, "sa", "");
+			return con;
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+	}
+}

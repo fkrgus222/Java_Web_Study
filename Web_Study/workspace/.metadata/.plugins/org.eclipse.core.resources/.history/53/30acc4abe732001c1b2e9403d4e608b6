@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" errorPage = "error.jsp"%>
+    
+<!-- 추가  -->
+<%@ page import = "user.UserDO" %>
+<%@ page import = "user.UserDAO" %>
+
+<%
+	//1. 사용자 입력 정보 추출
+	String id = request.getParameter("id");
+	String password = request.getParameter("password");
+	
+	//2. UserDO 클래스  객체 생성 후 멤버변수 값 초기화
+	UserDO userDO = new UserDO();
+	UserDO.setId(id);
+	UserDO.setPassword(password);
+	
+	//3.UserDAO 클래스 객체 생성 후 getUser(userDO) 메소드 호출하면서 userDO 객체를 넘겨준다. 
+		
+%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

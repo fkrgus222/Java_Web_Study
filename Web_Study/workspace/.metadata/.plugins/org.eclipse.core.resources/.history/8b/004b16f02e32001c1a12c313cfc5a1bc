@@ -1,0 +1,13 @@
+package mybatis.dao;
+
+/*
+ * MyBatis 사용 목적 중 하나가
+ * DAO (Data Access Object) 로부터 SQL문을 관리하는 것이다.
+ * 분리된 SQL문을 분리하는 것이다.
+ * 분리된 SQL문은 SQL mapper 파일에 작성하여 DAO에서는 
+ * SqlSession 객체가 SQL mapper 파일을 참조하게 된다. 
+ */
+
+public class EmpoDAO {
+
+}

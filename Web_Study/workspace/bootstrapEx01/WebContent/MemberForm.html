@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style>
+	#wrapper{
+		width : 100%;
+		text-align : center;
+	}
+
+	.redFont{
+		color : red;
+	}
+	
+	.tableCenter{
+		
+	}
+	#mainTable{
+		width : 80%;
+		margin-left : 10%;
+	}
+	.tableRight{
+		text-align : left;
+	}
+	
+	td{
+		border : 1px solid black;
+	}
+	tr{
+		border : 1px solid black;	
+	}
+	table{
+		border : 1px solid black;
+	}
+	
+</style>
+
+</head>
+<body>
+<div id = "wrapper">
+<h1>회원가입</h1>
+<span style = "margin-right : -70%"><span class = "redFont">*</span>필수입력사항</span>
+<table id = "mainTable">
+
+	<tr>
+		<th colspan = "2" class = "tableCenter" style = "background-color:orange">회원 기본 정보</th>
+	</tr>
+
+	<tr>
+		<td class = "tableCenter">아이디<span class = "redFont">*</span></td>
+		<td class = "tableRight" >
+			<input type = "text" placeholder = "6자 이상의 영문과 숫자"/>
+			<button>ID중복확인</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">비밀번호<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>
+			<span>8~12자리의 영문 대소문자와 숫자, 특수만자만 입력</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">비밀번호확인<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">이름<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">닉네임</td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>
+			<span>2~8자리의 한글로만 입력</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">이메일<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>@
+			<input type = "text"/>
+			<select>
+				<option>직접입력</option>
+				<option>naver.com</option>
+				<option>gmail.com</option>
+				<option>hanmail.net</option>
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">주민번호<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>-
+			<input type = "text"/>
+			<button>주민번호 정상 유무 체크</button>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">휴대폰<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text"/>
+			<span>예)010-1234-5678</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">성별<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "radio">남성</input>
+			<input type = "radio">여성</input>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">생년월일<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "date"/>
+		
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">직업<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<select>
+				<option>학생</option>			
+				<option>프로게이머</option>
+				<option>직장인</option>
+				<option>소방관</option>
+				<option>경찰관</option>
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class = "tableCenter">주소<span class = "redFont">*</span></td>
+		<td class = "tableRight" align = "left">
+			<input type = "text" placeholder = "우편번호"/><button>우편번호 찾기</button>
+			<br/>
+			<br/>
+			<input type = "text" placeholder = "주소"/>
+			<br/>
+			<input type = "text" placeholder = "참고항목(도로명인 경우:지역 동이름과 아파트이름)"/>
+			<input type = "text" placeholder = "상세주소(아파트 동호수, 또는 빌딩이름 입력요!)"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan = "2">
+			<button>회원가입 등록</button>
+			<button>다시쓰기</button>
+		</td>
+	</tr>
+	
+</table>
+</div>
+</body>
+</html>

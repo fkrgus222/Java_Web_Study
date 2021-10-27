@@ -1,0 +1,11 @@
+package mybatis.service;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+
+public class FactoryService {
+	
+	
+	
+	
+}

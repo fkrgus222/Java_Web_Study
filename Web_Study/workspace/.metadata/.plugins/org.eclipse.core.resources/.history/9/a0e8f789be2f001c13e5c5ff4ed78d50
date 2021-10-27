@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tabs jQuery UI 예제</title>
+</head>
+<body>
+	<div id = "example">
+		<ul>
+			<li><a href = "#tab1">교보문고 추천도서</a></li>
+			<li><a href = "#tab2">베스트셀러</a></li>
+			<li><a href = "#tab3">신간 도서</a></li>
+		
+		</ul>
+	</div>
+</body>
+</html>

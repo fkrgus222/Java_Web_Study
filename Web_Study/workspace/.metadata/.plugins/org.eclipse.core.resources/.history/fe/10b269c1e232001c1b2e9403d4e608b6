@@ -1,0 +1,33 @@
+package user;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+
+public class UserDAO {
+	//DB 관련 변수 선언
+	private Connection			conn = null;
+	private PreparedStatement 	pstnt = null;
+	private ResultSet 			rs = null;
+	
+	//SQL 명령어
+	private final String USER_GET 
+		= "select id, password from users where id = ? and password = ?";
+	
+	//로그인 user 조회(select) 메소드 구현 
+	public UserDO getUser(UserDO user) {
+		UserDO user = null;
+		
+		try {
+			System.out.println("===> JDBC로 getUser() 기능 처리");
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	
+}

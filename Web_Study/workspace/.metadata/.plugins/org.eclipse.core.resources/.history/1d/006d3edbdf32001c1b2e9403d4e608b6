@@ -1,0 +1,9 @@
+package common;
+
+public class JDBCUtil {
+	//H2 DB 연동에 관한 소스
+	static final String driver = "org.h2.Driver";
+	static final String url = "jdgc:h2:tcp://localhost/~/test";
+	
+	
+}

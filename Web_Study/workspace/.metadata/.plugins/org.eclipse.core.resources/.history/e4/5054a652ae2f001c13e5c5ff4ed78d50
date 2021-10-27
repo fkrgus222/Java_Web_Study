@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>datepicker 응용 => 교객 거래 내역</title>
+</head>
+<body>
+	<div>
+		<h2>고객 거래 내역 조회</h2>
+		<p>조회기간<input type = "text" id = "fromDate" name = "fromDate" />~
+				<input type = "text 'id = "todate" name = "toDate"/>
+	</div>
+
+
+
+
+</body>
+</html>

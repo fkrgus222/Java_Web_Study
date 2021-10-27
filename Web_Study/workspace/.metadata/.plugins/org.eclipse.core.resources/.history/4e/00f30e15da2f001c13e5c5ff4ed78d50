@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>(주)휴먼소프트 홈 페이지 만들기</title>
+
+<!--  부트스트랩 기본 태그  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- nav태그는 html5에 새로 추가된 시멘틱 태그 -->
+	<nav class = "navbar navbar-inverse">
+		<div class = "container-fluid">
+			<a class = "navbar-brand" href = "#">(주)휴먼소프트</a>
+			<button type = "button" class = "navbar-toggle" 
+					data-toggle = "collapse" data-target = "#myNavbar">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					</button>
+		</div>
+		
+		<!-- this is data target -->
+		<div class = "coppalse navbar-collapse" id = "#myNavbar">
+			<ul class = "nav navbar-nav">
+			
+				<li class = "active"><a href = "#">Home</a></li>
+				
+				<li class = "dropdown">
+					<a class = "dropdown-toggle" data-toggle = "dropdown"
+						href = "#">회사 소개<span class = "caret"></span></a>
+					<ul class = "dropdown-menu">
+						<li><a href = "#"> CEO 인사말 </a></li>
+						<li><a href = "#"> 설립 목적 </a></li>
+						<li><a href = "#"> 경영 이념 </a></li>
+						<li><a href = "#"> 회사 연혁 </a></li>
+						<li class = "divider"></li>
+						<li><a href = "#"> 찾아오는길 </a></li>
+					</ul>
+				</li>	
+				
+				<li class = "dropdown">
+					<a class = "dropdown-toggle" data-toggle = "dropdown"
+						href = "#">연구 개발<span class = "caret"></span></a>
+					<ul class = "dropdown-menu">
+						<li><a href = "#"> 자연어 처리 시스템 </a></li>
+						<li><a href = "#"> RPA(로봇프로세스자동화) </a></li>
+						<li><a href = "#"> 사이버네틱스 </a></li>
+						<li><a href = "#"> 감성정보처리 </a></li>
+					</ul>
+				</li>
+				
+				<li class = "dropdown">
+					<a class = "dropdown-toggle" data-toggle = "dropdown"
+						href = "#">고객지원<span class = "caret"></span></a>
+					<ul class = "dropdown-menu">
+						<li><a href = "#"> 공지 게시판 </a></li>
+						<li><a href = "#"> 문의 게시판 </a></li>
+						<li><a href = "#"> 자료실 </a></li>
+					</ul>
+				</li>
+				
+				<li class = "dropdown">
+					<a class = "dropdown-toggle" data-toggle = "dropdown"
+						href = "#">개인정보취급방침<span class = "caret"></span></a>
+					<ul class = "dropdown-menu">
+						<li><a href = "#"> 개인정보의 수집목적 및 이용목적 </a></li>
+						<li><a href = "#"> 개인정보 보유 및 이름 기간 </a></li>
+						<li><a href = "#"> 개인정보의 파기 절차 및 방법 </a></li>
+						<li><a href = "#"> 개인정보의 공유와 제공 </a></li>
+						<li><a href = "#"> 이용자 권리와 그 행사 방법 </a></li>
+						<li><a href = "#"> 개인정보 자동 수집 장치의 설치/운영 및 거부에 대한 사항 </a></li>
+					</ul>
+				</li>
+							
+			</ul>
+			
+			<ul class = "nav navbar-nav navbar-right">
+				<li><a href = "#"><span class = "glyphicon glyphicon-Log-in">로그인</span></a></li>
+				
+				
+			</ul>
+			
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+</body>
+</html>

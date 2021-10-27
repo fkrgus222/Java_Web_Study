@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery zoom을 활용하여 특정 이미지를 확대하여 보여주기</title>
+</head>
+<body>
+
+	<div>
+		<div class = "zoom" id = "ex1">
+			<img src = "./images/main_banner_1.jpg">
+			<p>마우스를 올려보세요!</p>
+		</div>
+	</div>
+
+	<div>
+		<div class = "zoom" id = "ex2">
+			<img src = "./images/main_banner_2.jpg">
+			<p>클릭된 동안 땡겨짐!</p>
+		</div>
+	</div>	
+
+
+
+</body>
+</html>

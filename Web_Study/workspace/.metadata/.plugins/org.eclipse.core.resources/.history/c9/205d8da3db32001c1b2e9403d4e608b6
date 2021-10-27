@@ -1,0 +1,12 @@
+package board;
+import java.sql.Date;
+
+
+public class BoardDO {
+	private int seq;
+	private String title;
+	private String writer;
+	private String content;
+	private Date regdate;
+	private int cnt;
+}
