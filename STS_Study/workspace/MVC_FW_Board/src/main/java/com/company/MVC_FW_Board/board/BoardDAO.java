@@ -34,7 +34,7 @@ public class BoardDAO {
 	
 		try {
 	
-			conn = JDBCUtil.getConnection();
+			conn = JDBCUtil.getConnction();
 	
 			
 	
@@ -122,7 +122,7 @@ public class BoardDAO {
 
 		try {
 
-			conn = JDBCUtil.getConnection();
+			conn = JDBCUtil.getConnction();
 
 			
 

@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.company.view.controller.Controller"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.company.MVC_FW_Board.board.BoardDO"/>
+<fullyQualifiedTypeName name="com.company.MVC_FW_Board.board.BoardDAO"/>
+</qualifiedTypeNameHistroy>

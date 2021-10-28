@@ -23,7 +23,7 @@ public class GetBoardListController implements Controller{
 		if(request.getParameter("searchCondition") != "" && request.getParameter("searchKeyword") != "") {
 			
 			searchField = request.getParameter("searchCondition");
-			searchText = request.getParameter("searchkeyword");
+			searchText = request.getParameter("searchKeyword");
 
 		}
 		BoardDAO boardDAO = new BoardDAO();

@@ -22,7 +22,7 @@ public class UserDAO {
 		
 		try {
 			System.out.println("===> JDBC로 getUser() 기능 처리");
-			conn = JDBCUtil.getConnection();
+			conn = JDBCUtil.getConnction();
 			pstmt = conn.prepareStatement(USER_GET);
 			pstmt.setString(1, userObj.getId());
 			pstmt.setString(2, userObj.getPassword());

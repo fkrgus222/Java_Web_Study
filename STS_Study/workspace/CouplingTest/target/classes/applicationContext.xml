@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+<!-- 
+	<bean id = "tv" class = "com.company.couplingtest.SamsungTV" 
+				p:speaker-ref="sony" p:price="6000000" />
+	<bean id = "sony" class = "com.company.couplingtest.SonySpeaker"/>
+ -->
+	
+	<context:component-scan base-package="package com.company.couplingtest;"></context:component-scan>
+<!-- 해당 피키지 안의 모든 클래스를 스캔한다. 위의 bean같은 일을 전부 Annotation이 검색하며 실행한다. -->
+	
+	
+</beans>

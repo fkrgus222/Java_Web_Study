@@ -15,10 +15,11 @@ public class GetBoardController implements Controller{
 
 		System.out.println("게시글 상세 보기 처리");
 		
-		String seq = request.getParameter("seq");
-		
+		int seq = Integer.parseInt(request.getParameter("seq"));
+		System.out.println("seq::::"+seq);
 		BoardDO boardDO = new BoardDO();
-		boardDO.setSeq(Integer.parseInt(seq));
+		
+		boardDO.setSeq(seq);
 		
 		BoardDAO boardDAO = new BoardDAO();
 		BoardDO board = boardDAO.getBoard(boardDO);
