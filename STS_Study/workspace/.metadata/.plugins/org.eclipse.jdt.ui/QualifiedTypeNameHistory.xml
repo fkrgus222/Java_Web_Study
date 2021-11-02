@@ -8,4 +8,5 @@
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="com.company.business.common.JDBCUtil"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.company.annotation.common.PasswordEncryptUtil"/>
 </qualifiedTypeNameHistroy>

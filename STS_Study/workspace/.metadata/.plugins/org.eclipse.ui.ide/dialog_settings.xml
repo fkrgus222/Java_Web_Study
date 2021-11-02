@@ -102,6 +102,9 @@
 		<item value="org.springsource.sts.package:3.9.9.201906181741-RELEASE-e412"/>
 		<item value="org.springsource.sts:3.9.9.201906181741-RELEASE"/>
 	</list>
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\DEV\STS_Study\workspace"/>
+	</list>
 	<section name="ExternalProjectImportWizard">
 	</section>
 </section>
